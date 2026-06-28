@@ -1,0 +1,1180 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="it">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>GIUSE S.R.L. | A Universal Company</title>\
+    <style>\
+        :root \{\
+            --bg-dark: #0a0a0a;\
+            --card-bg: #111111;\
+            --text-main: #ffffff;\
+            --text-muted: #888888;\
+            --border-color: #222222;\
+            --accent-color: #ffffff;\
+        \}\
+\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\
+            scroll-behavior: smooth;\
+        \}\
+\
+        body \{\
+            background-color: var(--bg-dark);\
+            color: var(--text-main);\
+            line-height: 1.6;\
+            padding-top: 80px;\
+        \}\
+\
+        header \{\
+            background-color: rgba(10, 10, 10, 0.95);\
+            border-bottom: 1px solid var(--border-color);\
+            position: fixed;\
+            width: 100%;\
+            top: 0;\
+            left: 0;\
+            z-index: 1000;\
+            backdrop-filter: blur(10px);\
+        \}\
+\
+        .header-container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 15px 20px;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .logo-area \{\
+            display: flex;\
+            align-items: center;\
+            gap: 15px;\
+        \}\
+\
+        .header-logo \{\
+            width: 45px;\
+            height: 45px;\
+            background-color: #ffffff;\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            font-weight: bold;\
+            color: #000000;\
+            font-size: 0.8rem;\
+            letter-spacing: 1px;\
+            border: 2px solid #333333;\
+            transition: transform 0.5s ease;\
+        \}\
+\
+        .logo-area:hover .header-logo \{\
+            transform: rotate(360deg);\
+        \}\
+\
+        .logo-text h1 \{\
+            font-size: 1.4rem;\
+            letter-spacing: 2px;\
+            text-transform: uppercase;\
+            font-weight: 700;\
+            line-height: 1.1;\
+        \}\
+\
+        .logo-text p \{\
+            font-size: 0.7rem;\
+            color: var(--text-muted);\
+            letter-spacing: 3px;\
+            text-transform: uppercase;\
+        \}\
+\
+        nav ul \{\
+            display: flex;\
+            list-style: none;\
+            gap: 35px;\
+        \}\
+\
+        nav a \{\
+            text-decoration: none;\
+            color: var(--text-main);\
+            font-weight: 500;\
+            text-transform: uppercase;\
+            font-size: 0.85rem;\
+            letter-spacing: 1px;\
+            transition: color 0.3s ease, padding-left 0.3s ease;\
+        \}\
+\
+        nav a:hover \{\
+            color: var(--text-muted);\
+        \}\
+\
+        .hero \{\
+            min-height: 60vh;\
+            display: flex;\
+            flex-direction: column;\
+            justify-content: center;\
+            align-items: center;\
+            text-align: center;\
+            padding: 40px 20px;\
+            border-bottom: 1px solid var(--border-color);\
+            background: radial-gradient(circle at center, #151515 0%, #0a0a0a 100%);\
+        \}\
+\
+        .hero h2 \{\
+            font-size: 3.5rem;\
+            text-transform: uppercase;\
+            letter-spacing: -1px;\
+            margin-bottom: 20px;\
+            animation: textFocus 1s ease-out;\
+        \}\
+\
+        .hero .slogan \{\
+            font-size: 1.4rem;\
+            font-style: italic;\
+            max-width: 800px;\
+            color: #cccccc;\
+            margin-bottom: 40px;\
+            font-weight: 300;\
+        \}\
+\
+        section \{\
+            padding: 100px 20px;\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            border-bottom: 1px solid var(--border-color);\
+        \}\
+\
+        .section-title \{\
+            font-size: 2.2rem;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+            margin-bottom: 60px;\
+        \}\
+\
+        .about-content \{\
+            display: grid;\
+            grid-template-columns: 1fr 1.1fr;\
+            gap: 60px;\
+            align-items: center;\
+        \}\
+\
+        .about-text p \{\
+            margin-bottom: 25px;\
+            font-size: 1.1rem;\
+            color: #cccccc;\
+        \}\
+\
+        .about-img-box \{\
+            background-color: #ffffff;\
+            border: 1px solid var(--border-color);\
+            padding: 20px;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            border-radius: 8px;\
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);\
+            transition: transform 0.4s ease;\
+        \}\
+\
+        .about-img-box:hover \{\
+            transform: scale(1.02);\
+        \}\
+\
+        .about-img-box img \{\
+            max-width: 100%;\
+            height: auto;\
+            display: block;\
+        \}\
+\
+        .services-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+            gap: 30px;\
+        \}\
+\
+        .service-card \{\
+            background-color: var(--card-bg);\
+            border: 1px solid var(--border-color);\
+            border-radius: 6px;\
+            overflow: hidden;\
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease, box-shadow 0.4s ease;\
+            cursor: pointer;\
+            position: relative;\
+        \}\
+\
+        .service-card:hover \{\
+            transform: translateY(-8px);\
+            border-color: #666666;\
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);\
+        \}\
+\
+        .service-card::after \{\
+            content: "APPROFONDISCI \uc0\u8594 ";\
+            position: absolute;\
+            bottom: 15px;\
+            right: 20px;\
+            font-size: 0.7rem;\
+            letter-spacing: 1px;\
+            color: var(--text-muted);\
+            opacity: 0;\
+            transition: opacity 0.3s ease, color 0.3s ease;\
+        \}\
+\
+        .service-card:hover::after \{\
+            opacity: 1;\
+            color: var(--accent-color);\
+        \}\
+\
+        .service-img-wrapper \{\
+            width: 100%;\
+            height: 200px;\
+            overflow: hidden;\
+            border-bottom: 1px solid var(--border-color);\
+            background-color: #222222;\
+        \}\
+\
+        .service-img-wrapper img \{\
+            width: 100%;\
+            height: 100%;\
+            object-fit: cover;\
+            filter: grayscale(40%);\
+            transition: filter 0.4s ease, transform 0.4s ease;\
+        \}\
+\
+        .service-card:hover .service-img-wrapper img \{\
+            filter: grayscale(0%);\
+            transform: scale(1.05);\
+        \}\
+\
+        .service-details \{\
+            padding: 30px;\
+            padding-bottom: 45px;\
+        \}\
+\
+        .service-card .icon \{\
+            font-size: 0.8rem;\
+            color: var(--text-muted);\
+            margin-bottom: 10px;\
+            text-transform: uppercase;\
+            font-weight: 700;\
+            letter-spacing: 2px;\
+        \}\
+\
+        .service-card h3 \{\
+            font-size: 1.3rem;\
+            text-transform: uppercase;\
+            margin-bottom: 15px;\
+            letter-spacing: 0.5px;\
+        \}\
+\
+        .service-card p \{\
+            color: #aaaaaa;\
+            font-size: 0.95rem;\
+        \}\
+\
+        .qr-section \{\
+            display: flex;\
+            flex-direction: column;\
+            align-items: center;\
+            text-align: center;\
+            background-color: var(--card-bg);\
+            padding: 60px 40px;\
+            border: 1px solid var(--border-color);\
+            border-radius: 8px;\
+            margin-top: 40px;\
+        \}\
+\
+        .qr-box \{\
+            background: #ffffff;\
+            padding: 20px;\
+            border-radius: 12px;\
+            margin-top: 25px;\
+            display: inline-block;\
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);\
+            transition: transform 0.3s ease;\
+        \}\
+\
+        .qr-box:hover \{\
+            transform: scale(1.05);\
+        \}\
+\
+        .qr-box img \{\
+            display: block;\
+            width: 220px;\
+            height: 220px;\
+        \}\
+\
+        .contact-content \{\
+            display: grid;\
+            grid-template-columns: 1.2fr 0.8fr;\
+            gap: 50px;\
+        \}\
+\
+        table \{\
+            width: 100%;\
+            border-collapse: collapse;\
+        \}\
+\
+        td \{\
+            padding: 20px 10px;\
+            border-bottom: 1px solid var(--border-color);\
+            font-size: 1.05rem;\
+        \}\
+\
+        td.label \{\
+            color: var(--text-muted);\
+            text-transform: uppercase;\
+            font-size: 0.85rem;\
+            letter-spacing: 1px;\
+            width: 30%;\
+        \}\
+\
+        .contact-info-box \{\
+            background-color: var(--card-bg);\
+            padding: 40px;\
+            border: 1px solid var(--border-color);\
+            border-radius: 4px;\
+        \}\
+\
+        .contact-info-box h3 \{\
+            text-transform: uppercase;\
+            margin-bottom: 20px;\
+            font-size: 1.3rem;\
+        \}\
+\
+        .contact-info-box p \{\
+            margin-bottom: 15px;\
+            color: #cccccc;\
+        \}\
+\
+        @keyframes textFocus \{\
+            0% \{ filter: blur(12px); opacity: 0; \}\
+            100% \{ filter: blur(0px); opacity: 1; \}\
+        \}\
+\
+        @keyframes modalFadeIn \{\
+            from \{ opacity: 0; transform: scale(0.95); translateY(10px); \}\
+            to \{ opacity: 1; transform: scale(1); translateY(0); \}\
+        \}\
+\
+        .custom-modal \{\
+            display: none;\
+            position: fixed;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            background-color: rgba(0, 0, 0, 0.85);\
+            z-index: 2000;\
+            justify-content: center;\
+            align-items: center;\
+            backdrop-filter: blur(8px);\
+            padding: 20px;\
+        \}\
+\
+        .custom-modal-content \{\
+            background-color: #111111;\
+            border: 1px solid #333333;\
+            max-width: 600px;\
+            width: 100%;\
+            padding: 40px;\
+            border-radius: 8px;\
+            position: relative;\
+            box-shadow: 0 20px 50px rgba(0,0,0,0.9);\
+            animation: modalFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);\
+            text-align: center;\
+        \}\
+\
+        .custom-modal-close \{\
+            position: absolute;\
+            top: 15px;\
+            right: 20px;\
+            font-size: 1.8rem;\
+            color: var(--text-muted);\
+            cursor: pointer;\
+            transition: color 0.3s ease;\
+        \}\
+\
+        .custom-modal-close:hover \{\
+            color: var(--text-main);\
+        \}\
+\
+        .modal-icon-container \{\
+            width: 80px;\
+            height: 80px;\
+            margin: 0 auto 20px auto;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            background-color: #ffffff;\
+            border-radius: 12px;\
+            padding: 10px;\
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);\
+        \}\
+\
+        .modal-icon-container svg \{\
+            width: 100%;\
+            height: 100%;\
+            fill: #000000;\
+        \}\
+\
+        #modal-division \{\
+            font-size: 0.8rem;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+            color: var(--text-muted);\
+            margin-bottom: 5px;\
+        \}\
+\
+        #modal-title \{\
+            font-size: 1.8rem;\
+            text-transform: uppercase;\
+            letter-spacing: 1px;\
+            margin-bottom: 20px;\
+            border-bottom: 1px solid var(--border-color);\
+            padding-bottom: 15px;\
+        \}\
+\
+        #modal-description \{\
+            color: #cccccc;\
+            font-size: 1.05rem;\
+            line-height: 1.7;\
+            text-align: left;\
+        \}\
+\
+        footer \{\
+            padding: 40px 20px;\
+            background-color: #000000;\
+            font-size: 0.85rem;\
+            color: var(--text-muted);\
+            text-align: center;\
+        \}\
+\
+        .footer-container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .hidden \{\
+            display: none !important;\
+        \}\
+\
+        /* --- STILI ISOLATI PER IL QUIZ DI LAUREA (SECRET PROJECTS) --- */\
+        #secret-quiz-zone-wrapper \{\
+            --quiz-bg: #0d1117;\
+            --quiz-card-bg: #161b22;\
+            --quiz-primary: #2ea44f;\
+            --quiz-primary-hover: #2c974b;\
+            --quiz-text: #c9d1d9;\
+            --quiz-accent: #58a6ff;\
+            --quiz-error: #f85149;\
+            --quiz-phase2: #ff7b72;\
+            --quiz-phase2-hover: #f85149;\
+            \
+            background-color: var(--quiz-bg);\
+            padding: 40px 20px;\
+            border-radius: 8px;\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            width: 100%;\
+            margin-top: 30px;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .quiz-container \{\
+            background-color: var(--quiz-card-bg);\
+            border: 2px solid var(--quiz-primary);\
+            border-radius: 8px;\
+            padding: 30px;\
+            width: 100%;\
+            max-width: 650px;\
+            box-shadow: 0 0 20px rgba(46, 164, 79, 0.2);\
+            text-align: center;\
+            transition: border-color 0.5s;\
+            font-family: 'Courier New', Courier, monospace;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .quiz-container * \{\
+            font-family: 'Courier New', Courier, monospace;\
+            box-sizing: border-box;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .quiz-container.phase2-active \{\
+            border-color: var(--quiz-phase2);\
+            box-shadow: 0 0 20px rgba(255, 123, 114, 0.2);\
+        \}\
+\
+        #secret-quiz-zone-wrapper h1 \{\
+            color: var(--quiz-primary);\
+            margin-bottom: 20px;\
+            font-size: 1.8rem;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .phase2-active h1 \{\
+            color: var(--quiz-phase2);\
+        \}\
+\
+        #secret-quiz-zone-wrapper p.subtitle \{\
+            margin-bottom: 30px;\
+            color: #8b949e;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .btn \{\
+            background-color: var(--quiz-primary);\
+            color: white;\
+            border: none;\
+            padding: 12px 24px;\
+            font-size: 1rem;\
+            font-weight: bold;\
+            cursor: pointer;\
+            border-radius: 6px;\
+            transition: background 0.2s, transform 0.1s;\
+            width: 100%;\
+            margin-top: 10px;\
+            text-transform: uppercase;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .btn:hover \{\
+            background-color: var(--quiz-primary-hover);\
+        \}\
+\
+        #secret-quiz-zone-wrapper .btn.btn-phase2 \{\
+            background-color: var(--quiz-phase2);\
+            margin-top: 15px;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .btn.btn-phase2:hover \{\
+            background-color: var(--quiz-phase2-hover);\
+        \}\
+\
+        #secret-quiz-zone-wrapper .btn:active \{\
+            transform: scale(0.98);\
+        \}\
+\
+        #secret-quiz-zone-wrapper .progress-bar \{\
+            height: 6px;\
+            background-color: #21262d;\
+            border-radius: 3px;\
+            margin-bottom: 25px;\
+            overflow: hidden;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .progress-fill \{\
+            height: 100%;\
+            background-color: var(--quiz-accent);\
+            width: 0%;\
+            transition: width 0.3s;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .question-box \{\
+            font-size: 1.2rem;\
+            margin-bottom: 25px;\
+            text-align: left;\
+            line-height: 1.5;\
+            color: var(--quiz-text);\
+        \}\
+\
+        #secret-quiz-zone-wrapper .options-container \{\
+            display: flex;\
+            flex-direction: column;\
+            gap: 12px;\
+            margin-bottom: 25px;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .option-btn \{\
+            background-color: #21262d;\
+            color: var(--quiz-text);\
+            border: 1px solid #30363d;\
+            padding: 14px;\
+            text-align: left;\
+            border-radius: 6px;\
+            cursor: pointer;\
+            font-size: 1rem;\
+            transition: all 0.2s;\
+            width: 100%;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .option-btn:hover:not([disabled]) \{\
+            border-color: var(--quiz-accent);\
+            background-color: #262c36;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .option-btn.correct \{\
+            background-color: rgba(46, 164, 79, 0.2) !important;\
+            border-color: var(--quiz-primary) !important;\
+            color: #56d364;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .option-btn.wrong \{\
+            background-color: rgba(248, 81, 73, 0.2) !important;\
+            border-color: var(--quiz-error) !important;\
+            color: #f85149;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .score-text \{\
+            font-size: 1.5rem;\
+            margin: 20px 0;\
+            font-weight: bold;\
+            color: var(--quiz-text);\
+        \}\
+\
+        #secret-quiz-zone-wrapper .evaluation \{\
+            color: var(--quiz-accent);\
+            font-style: italic;\
+            margin-bottom: 20px;\
+            line-height: 1.4;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .serious-callout \{\
+            font-size: 1.3rem;\
+            color: #ec5656;\
+            font-weight: bold;\
+            margin-top: 25px;\
+            border-top: 1px dashed #30363d;\
+            padding-top: 20px;\
+            text-transform: uppercase;\
+        \}\
+\
+        #secret-quiz-zone-wrapper .terminal-decor \{\
+            color: #8b949e;\
+            font-size: 0.9rem;\
+            margin-bottom: 15px;\
+            text-align: left;\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .header-container \{ flex-direction: column; gap: 15px; \}\
+            .about-content, .contact-content \{ grid-template-columns: 1fr; \}\
+            .hero h2 \{ font-size: 2.2rem; \}\
+            .footer-container \{ flex-direction: column; gap: 15px; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <header>\
+        <div class="header-container">\
+            <div class="logo-area">\
+                <div class="header-logo">GIUSE</div>\
+                <div class="logo-text">\
+                    <h1>GIUSE S.R.L.</h1>\
+                    <p>A Universal Company</p>\
+                </div>\
+            </div>\
+            <nav>\
+                <ul>\
+                    <li><a href="#azienda">Azienda</a></li>\
+                    <li><a href="#servizi">Servizi</a></li>\
+                    <li><a href="#qr-code-section">QR Code</a></li>\
+                    <li><a href="#contatti">Contatti</a></li>\
+                    <li><a href="#secret-projects-section">Secret Projects</a></li>\
+                </ul>\
+            </nav>\
+        </div>\
+    </header>\
+\
+    <section class="hero">\
+        <h2>Operazioni Universali.</h2>\
+        <p class="slogan">\'93If it exists, we make it. If it doesn\'92t, we invent it \'96 from 2003\'94</p>\
+    </section>\
+\
+    <section id="azienda">\
+        <h2 class="section-title">Profilo Societario</h2>\
+        <div class="about-content">\
+            <div class="about-text">\
+                <p>Nata nel 2003 come hub di ingegneria avanzata, <strong>GIUSE S.R.L.</strong> si \'e8 sviluppata fino a coprire una rete diversificata di competenze e soluzioni operative su scala globale.</p>\
+                <p>Non siamo un'azienda settoriale: siamo una struttura flessibile capace di rispondere a qualsiasi esigenza tecnica, logistica, mediatica o di sicurezza con soluzioni proprietarie e brevettate.</p>\
+            </div>\
+            <div class="about-img-box">\
+                <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=600&auto=format&fit=crop" alt="GIUSE BRANDING">\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="servizi">\
+        <h2 class="section-title">Le Divisioni Operative</h2>\
+        <div class="services-grid">\
+            \
+            <div class="service-card" onclick="openDetails('01 / ENG', 'Schede &amp; Hardware', 'Ingegnerizzazione, sviluppo e micro-progettazione interna di circuiti stampati (PCB) su misura. Forniamo soluzioni hardware customizzate per scopi industriali complessi, prototipazione rapida e sistemi embedded ad alta affidabilit\'e0 strutturati per l\\'automazione di livello enterprise.', 'eng')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=500&auto=format&fit=crop" alt="Microchip e Schede Logiche Custom">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">01 / ENG</div>\
+                    <h3>Schede &amp; Hardware</h3>\
+                    <p>Ingegnerizzazione e micro-progettazione di circuiti stampati (PCB) su misura e soluzioni hardware customizzate per scopi industriali.</p>\
+                </div>\
+            </div>\
+\
+            <div class="service-card" onclick="openDetails('02 / INT', 'Investigazioni', 'La nostra divisione di intelligence aziendale e privata opera seguendo rigidi protocolli di riservatezza. Forniamo analisi avanzate delle minacce, servizi di cyber-protezione dei dati aziendali, indagini complesse sul campo e pianificazione della sicurezza per la tutela degli asset tangibili e intangibili.', 'int')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=500&auto=format&fit=crop" alt="Investigazioni">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">02 / INT</div>\
+                    <h3>Investigazioni</h3>\
+                    <p>Divisione di intelligence aziendale e privata. Analisi, protezione dei dati, indagini complesse e gestione della sicurezza in totale riservatezza.</p>\
+                </div>\
+            </div>\
+\
+            <div class="service-card" onclick="openDetails('03 / LOG', 'Logistica Merce', 'Gestione strategica della supply chain internazionale. La divisione coordina il controllo qualit\'e0, lo stoccaggio, il frazionamento e la movimentazione rapida di merci su scala globale, impiegando canali logistici ottimizzati proprietari per superare i colli di bottiglia commerciali.', 'log')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=500&auto=format&fit=crop" alt="Logistica Merce">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">03 / LOG</div>\
+                    <h3>Logistica Merce</h3>\
+                    <p>Controllo, smistamento e movimentazione merci su scala internazionale, ottimizzando le catene di approvvigionamento globali.</p>\
+                </div>\
+            </div>\
+\
+            <div class="service-card" onclick="openDetails('04 / MED', 'Recording &amp; Editing', 'Produzione video broadcast professionale. Disponiamo di sistemi di ripresa multicamera di ultima generazione e suite di montaggio dedicate. Sviluppiamo color correction cinematografica, sound design, post-produzione audio/video ed effetti visivi avanzati per produzioni corporate.', 'med')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=500&auto=format&fit=crop" alt="Recording Video">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">04 / MED</div>\
+                    <h3>Recording &amp; Editing</h3>\
+                    <p>Produzione video professionale con sistemi di ripresa multicamera. Suite interne di montaggio, color correction e post-produzione audio/video.</p>\
+                </div>\
+            </div>\
+\
+            <div class="service-card" onclick="openDetails('05 / SFT', 'Software Hub', 'Progettazione e sviluppo di ecosistemi applicativi custom. Realizziamo sistemi gestionali integrati con crittografia end-to-end avanzata, architetture cloud scalabili e soluzioni software dedicate alla\\'automazione dei flussi lavorativi commerciali e industriali.', 'sft')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=500&auto=format&fit=crop" alt="Software Sviluppo">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">05 / SFT</div>\
+                    <h3>Software Hub</h3>\
+                    <p>Sviluppo di applicazioni proprietarie, sistemi gestionali criptati e architetture software dedicate all'automazione dei processi commerciali.</p>\
+                </div>\
+            </div>\
+\
+            <div class="service-card" onclick="openDetails('06 / ENT', 'Media &amp; Entertainment', 'La presenza strategica nell\\'universo televisivo ed editoriale si consolida attraverso il controllo di una quota di rilievo all\\'interno di <strong>PineappleTv</strong>. Questa societ\'e0 controllata e partecipata sviluppa servizi televisivi di caratura nazionale e format proprietari distribuiti su canali digitali e satellitari. Tra le produzioni di punta spicca il celebre e seguitissimo programma cult <strong>&ldquo;Peppe vs food&rdquo;</strong>, una pietra miliare del palinsesto entertainment incentrata sulle sfide culinarie estreme.', 'ent')">\
+                <div class="service-img-wrapper">\
+                    <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=500&auto=format&fit=crop" alt="Media & Entertainment">\
+                </div>\
+                <div class="service-details">\
+                    <div class="icon">06 / ENT</div>\
+                    <h3>Media &amp; Entertainment</h3>\
+                    <p>Tramite la partecipazione in <strong>PineappleTv</strong>, gestiamo la creazione e distribution di contenuti d'intrattenimento originali. Tra i nostri format di maggior successo figura il celebre programma culinario <em>"Peppe vs Food"</em>.</p>\
+                </div>\
+            </div>\
+\
+        </div>\
+    </section>\
+\
+    <section id="qr-code-section">\
+        <h2 class="section-title">Digital QR Code Istituzionale</h2>\
+        <div class="qr-section">\
+            <h3>Scansiona per metterti in contatto con noi</h3>\
+            <p style="color: var(--text-muted); max-width: 600px; margin-top: 10px;">Questo codice \'e8 pienamente operativo: scansionandolo con la fotocamera del tuo telefono, si aprir\'e0 direttamente la tua applicazione email con il nostro indirizzo gi\'e0 inserito.</p>\
+            \
+            <div class="qr-box">\
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=mailto:universal@giusesrl.com&ecc=H" alt="QR Code Contatto Diretto">\
+            </div>\
+            \
+            <p style="margin-top: 25px; font-family: monospace; color: #555555; font-size: 0.9rem;">ACTION: mailto:universal@giusesrl.com</p>\
+        </div>\
+    </section>\
+\
+    <section id="contatti">\
+        <h2 class="section-title">Dati Legali e Relazioni</h2>\
+        <div class="contact-content">\
+            \
+            <div class="contact-table">\
+                <table>\
+                    <tr>\
+                        <td class="label">Sede Legale</td>\
+                        <td>Via Neglia, 1, Mungivacca (BA)</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="label">Partita IVA</td>\
+                        <td>IT87654321098</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="label">Codice Fiscale</td>\
+                        <td style="font-family: monospace; letter-spacing: 1px;">A3C6A2T9A4M7A0C3N1</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="label">Registro R.E.A.</td>\
+                        <td>BA - 543210</td>\
+                    </tr>\
+                </table>\
+            </div>\
+\
+            <div class="contact-info-box">\
+                <h3>Contatti Diretti</h3>\
+                <p><strong>Dipartimento Centrale:</strong><br>info@giusesrl.com</p>\
+                <p><strong>Relazioni Esterne:</strong><br>corporate@giusesrl.com</p>\
+            </div>\
+\
+        </div>\
+    </section>\
+\
+    <section id="secret-projects-section">\
+        <h2 class="section-title">Secret Projects</h2>\
+        \
+        <div id="secret-gate-lock" class="qr-section" style="border: 1px dashed #ff4444; background: #0f0a0a;">\
+            <h3 style="color: #ff4444; letter-spacing: 3px;">\uc0\u9888 \u65039  ARCHIVIO PROGETTI CLASSIFICATI \u9888 \u65039 </h3>\
+            <p style="color: var(--text-muted); max-width: 600px; margin-top: 15px; margin-bottom: 30px;">\
+                L'accesso a questa partizione del database aziendale \'e8 protetto da protocolli crittografici di livello militare. Inserire la Pass Code autorizzata per procedere.\
+            </p>\
+            <button class="btn" style="max-width: 280px; background-color: #ff4444;" onclick="unlockSecretData()">Sblocca Secret Wars</button>\
+        </div>\
+\
+        <div id="secret-quiz-zone-wrapper" class="hidden">\
+            <div id="main-card" class="quiz-container">\
+                \
+                <div id="start-screen">\
+                    <div class="terminal-decor">andrea@laurea-magistrale:~$ ./start_hardcore_quiz.sh</div>\
+                    <h1>La Prova Finale di Andrea</h1>\
+                    <p class="subtitle">Basta scherzare. Dimostra ai tuoi amici che la corona d'alloro te la sei meritata rispondendo a queste domande tecniche avanzate.</p>\
+                    <button class="btn" onclick="startQuiz(1)">Avvia Validazione Competenze</button>\
+                </div>\
+\
+                <div id="quiz-screen" class="hidden">\
+                    <div class="progress-bar">\
+                        <div id="progress-fill" class="progress-fill"></div>\
+                    </div>\
+                    <div class="terminal-decor" id="question-counter">Domanda 1 di 10</div>\
+                    <div class="question-box" id="question-text">Testo della domanda</div>\
+                    <div class="options-container" id="options-container"></div>\
+                    <button id="next-btn" class="btn hidden" onclick="nextQuestion()">Prossima Domanda</button>\
+                </div>\
+\
+                <div id="result-screen-1" class="hidden">\
+                    <div class="terminal-decor">andrea@laurea-magistrale:~$ ./check_graduation_status.py</div>\
+                    <h1>Compilazione Completata!</h1>\
+                    <div class="score-text">Punteggio Informatica: <span id="score-display-1">0</span> / 10</div>\
+                    <div class="evaluation" id="evaluation-text-1">Valutazione in corso...</div>\
+                    \
+                    <div class="serious-callout">\
+                        \uc0\u9888 \u65039  Per\'f2 adesso facciamo sul serio, ecco il quiz vero...\
+                    </div>\
+                    <button class="btn btn-phase2" onclick="startQuiz(2)">Sblocca il Quiz della Vita</button>\
+                </div>\
+\
+                <div id="result-screen-2" class="hidden">\
+                    <div class="terminal-decor">andrea@laurea-magistrale:~$ ./system_shutdown.sh</div>\
+                    <h1>Test Definitivo Superato!</h1>\
+                    <div class="score-text">Punteggio Quiz Vero: <span id="score-display-2">0</span> / 10</div>\
+                    <div class="evaluation" style="color: #ff7b72;">\
+                        Diagnosi Finale: Ok, forse con i sistemi distribuiti te la cavi, ma la tua cultura pop, musicale e cinematografica \'e8 ufficialmente da 110 e Lode. La festa pu\'f2 ufficialmente iniziare! Auguri Dottor Andrea! \uc0\u55356 \u57235 \u55356 \u57211 \
+                    </div>\
+                    <button class="btn" onclick="restartEverything()">Riavvia Tutto Da Capo</button>\
+                </div>\
+\
+            </div>\
+        </div>\
+    </section>\
+\
+    <div id="detailsModal" class="custom-modal" onclick="closeDetails()">\
+        <div class="custom-modal-content" onclick="event.stopPropagation()">\
+            <span class="custom-modal-close" onclick="closeDetails()">&times;</span>\
+            \
+            <div class="modal-icon-container" id="modal-icon-target">\
+                </div>\
+\
+            <div id="modal-division"></div>\
+            <h3 id="modal-title"></h3>\
+            <p id="modal-description"></p>\
+        </div>\
+    </div>\
+\
+    <footer>\
+        <div class="footer-container">\
+            <p>GIUSE COPYRIGHT &copy; 2026. Tutti i diritti riservati.</p>\
+            <p>Security Protocol: ACCAT_A_MACN_V4</p>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        const svgIcons = \{\
+            int: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">\
+                    <path d="M15 80 C 18 65, 25 55, 32 48 C 31 44, 30 40, 29 36 C 33 37, 37 38, 40 35 C 42 26, 47 16, 56 13 C 65 10, 75 14, 78 22 C 86 24, 90 26, 95 30 C 85 30, 82 33, 80 36 C 82 39, 82 44, 80 48 C 77 49, 74 48, 72 45 C 69 51, 65 55, 65 62 C 68 64, 72 63, 74 65 C 68 72, 61 80, 55 87 L15 87 Z" fill="#000000"/>\
+                    <path d="M48 55 L60 69 M44 59 L56 73" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>\
+                  </svg>`,\
+            eng: `<svg viewBox="0 0 24 24">\
+                    <rect x="5" y="5" width="14" height="14" rx="2" fill="none" stroke="#000000" stroke-width="2"/>\
+                    <rect x="9" y="9" width="6" height="6" fill="#000000"/>\
+                    <path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4" stroke="#000000" stroke-width="2" stroke-linecap="round"/>\
+                  </svg>`,\
+            log: `<svg viewBox="0 0 24 24">\
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\
+                  </svg>`,\
+            med: `<svg viewBox="0 0 24 24">\
+                    <path d="M23 7l-7 5 7 5V7z" fill="#000000"/>\
+                    <rect x="1" y="5" width="13" height="14" rx="2" fill="none" stroke="#000000" stroke-width="2"/>\
+                    <circle cx="5" cy="10" r="1.5" fill="#000000"/>\
+                  </svg>`,\
+            sft: `<svg viewBox="0 0 24 24">\
+                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6M12 4.5l-2 15" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\
+                  </svg>`,\
+            ent: `<svg viewBox="0 0 24 24">\
+                    <rect x="2" y="5" width="20" height="13" rx="2" fill="none" stroke="#000000" stroke-width="2"/>\
+                    <path d="M17 2l-5 3-5-3M12 18v3M8 21h8" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>\
+                  </svg>`\
+        \};\
+\
+        function openDetails(division, title, description, iconKey) \{\
+            document.getElementById('modal-division').innerHTML = division;\
+            document.getElementById('modal-title').innerHTML = title;\
+            document.getElementById('modal-description').innerHTML = description;\
+            document.getElementById('modal-icon-target').innerHTML = svgIcons[iconKey] || '';\
+            const modal = document.getElementById('detailsModal');\
+            modal.style.display = 'flex';\
+        \}\
+\
+        function closeDetails() \{\
+            document.getElementById('detailsModal').style.display = 'none';\
+        \}\
+\
+        document.addEventListener('keydown', function(event) \{\
+            if (event.key === 'Escape') \{\
+                closeDetails();\
+            \}\
+        \});\
+\
+        // LOGICA DI SBLOCCO SITO CORPORATE\
+        function unlockSecretData() \{\
+            const passInput = prompt("INSERIRE PASS CODE DI SICUREZZA:");\
+            if (passInput && passInput.trim() === "CIRO2000") \{\
+                document.getElementById('secret-gate-lock').classList.add('hidden');\
+                document.getElementById('secret-quiz-zone-wrapper').classList.remove('hidden');\
+                document.getElementById('secret-projects-section').scrollIntoView();\
+            \} else if (passInput !== null) \{\
+                alert("ACCESSO NEGATO. Chiave di cifratura non valida.");\
+            \}\
+        \}\
+\
+        // LOGICHE OPERATIVE DEL QUIZ DI LAUREA DI ANDREA\
+        const techQuestions = [\
+            \{\
+                question: "In un sistema distribuito, secondo il Teorema CAP, se decidi di garantire la Partizionabilit\'e0 (P) e la Consistenza (C), cosa sacrifichi?",\
+                options: ["La Disponibilit\'e0 (Availability), ovvero il sistema potrebbe rifiutarsi di rispondere", "Le performance di computazione della CPU", "La sicurezza crittografica dei nodi", "Il fegato di chi deve fare il deploy del cluster"],\
+                correct: 0\
+            \},\
+            \{\
+                question: "Quale tra le seguenti complessit\'e0 computazionali nel caso peggiore descrive l'algoritmo QuickSort senza ottimizzazioni?",\
+                options: ["O(n log n)", "O(n\'b2)", "O(1)", "O(n!), ma solo se a scriverlo \'e8 stato uno stagista"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Nel contesto dei database relazionali, a cosa serve isolare una transazione a livello 'Serializable'?",\
+                options: ["A trasformare le tabelle in stringhe JSON", "Ad evitare letture sporche, letture non ripetibili e anomalie fantasma contemporaneamente", "A velocizzare le query di tipo JOIN di un fattore 10x", "A far arrabbiare l'amministratore di sistema bloccando l'intero database"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Nello sviluppo concorrente, qual \'e8 la condizione principale per cui si verifica un Race Condition?",\
+                options: ["Due o pi\'f9 thread tentano di accedere e modificare la stessa risorsa condivisa contemporaneamente senza sincronizzazione", "La CPU supera i 90\'b0C a causa del calcolo parallelo", "Il garbage collector decide di terminare il programma senza preavviso", "Hai provato a far correre due istanze di Windows contemporaneamente"],\
+                correct: 0\
+            \},\
+            \{\
+                question: "Nel Deep Learning, cosa indica il problema del 'Vanishing Gradient' durante la backpropagation?",\
+                options: ["La GPU finisce la memoria VRAM a disposizione", "I gradienti diventano asintoticamente vicini a zero, impedendo ai primi strati della rete di apprendere", "Il modello ha imparato a memoria i dati di training (Overfitting)", "Il dataset si \'e8 parzialmente corrotto durante il caricamento"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Qual \'e8 la differenza fondamentale tra un mutex e un semaforo nei sistemi operativi?",\
+                options: ["Il mutex gestisce solo stringhe, il semaforo gestisce numeri interi", "Il mutex pu\'f2 essere rilasciato solo dal thread che lo ha acquisito, il semaforo no", "Il semaforo funciona solo su sistemi Linux distribuiti", "Il mutex \'e8 pi\'f9 colorato rispetto al semaforo"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Se implementi una REST API, quale metodo HTTP dovresti usare per garantire l'idempotenza durante un aggiornamento totale di una risorsa?",\
+                options: ["POST", "PATCH", "PUT", "GET, ma devi chiedere scusa al consorzio W3C"],\
+                correct: 2\
+            \},\
+            \{\
+                question: "In crittografia asimmetrica, se Bob vuole inviare un messaggio cifrato e segreto ad Alice, con quale chiave deve cifrarlo?",\
+                options: ["Con la chiave privata di Bob", "Con la chiave pubblica di Alice", "Con la chiave privata di Alice", "Con una password decisa su WhatsApp la sera prima"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Cos'\'e8 una 'Race Condition' di tipo Deadlock tra due processi?",\
+                options: ["Quando un processo termina prima dell'altro", "Quando il processo A aspetta una risorsa bloccata da B, e il processo B aspetta una risorsa bloccata da A perpetuamente", "Qual quando la RAM viene saturata completamente da leak di puntatori", "Una band metal formata da programmatori C++ pentiti"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Infine, qual \'e8 la reale differenza architetturale tra un microservizio e un monolite?",\
+                options: ["Il monolite si rompe tutto insieme; nei microservizi si rompe una cosa alla volta in modo distribuito e asincrono", "I microservizi usano solo Python, il monolite solo Java", "I microservizi non richiedono l'uso di database dedicati", "Il monolite \'e8 una tecnologia obsoleta degli anni '70 bandita dall'IEEE"],\
+                correct: 0\
+            \}\
+        ];\
+\
+        const realQuestions = [\
+            \{\
+                question: "Come si chiama il Taxi guidato in un film molto famoso dove un milanista accanito colpisce dei romani?",\
+                options: ["Zaccheroni 2", "Asprilla 9", "Zaccheroni 4", "Bierhoff 20"],\
+                correct: 2\
+            \},\
+            \{\
+                question: "Famosa citt\'e0 romana, luogo di nascita di Michael Jackson:",\
+                options: ["Indiana", "Latina", "Civitavecchia", "Frosinone"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Nome famoso di un ragazzo che ha cambiato il suo nome per comprare da bere:",\
+                options: ["Mohammed", "Franco", "MClavin", "Mclovin"],\
+                correct: 3\
+            \},\
+            \{\
+                question: "Nome di un film nominato agli Oscar per la miglior sceneggiatura, trama: calciatori giapponesi che fanno arti marziali.",\
+                options: ["Inazuma Eleven: The Movie", "Shaolin Soccer", "Kung Fu Dunk", "The Football Shaolin Masters"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Canzone di Rancore, quale di queste barre \'e8 SBAGLIATA?",\
+                options: ["Andrea attende il notturno delle tre e mezza", "Franco \'e8 ubriaco fradicio sul parabrezza", "Massimo \'e8 in macchina quando inizia a vedere.", "Alessandro sta su una tavola e sente attorno la brezza"],\
+                correct: 2\
+            \},\
+            \{\
+                question: "Quanti round ha fatto Rocky nel film Rocky 3 contro Clubber Lang nell'incontro finale?",\
+                options: ["15", "12", "3", "7"],\
+                correct: 2\
+            \},\
+            \{\
+                question: "Estate 2017, tu cantavi: 'Stavo con Franco, quando sotto casa gli hanno sparato, ma quanta violenza che passa in Franco, per\'f2 meglio in tele che dentro Franco'. Di che canzone si tratta?",\
+                options: ["Fenomeno \'96 Fabri Fibra", "Pamplona \'96 Fabri Fibra ft. Thegiornalisti", "Vorrei ma non posto \'96 J-Ax & Fedez", "Senza pagare \'96 J-Ax & Fedez"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "Indica quale canzone \'e8 presente nella colonna sonora di FIFA 14:",\
+                options: ["On Top of the World - Imagine Dragons", "My type - Saint Motel", "The nights - Avicii", "Love me again - John Newman"],\
+                correct: 3\
+            \},\
+            \{\
+                question: "Canzone vincitrice dei Grammy di uno sconosciuto con i baffi che cantava 'You touch my tra la la, my din din don':",\
+                options: ["Slux", "G\'fcnther", "Muller", "Jentur"],\
+                correct: 1\
+            \},\
+            \{\
+                question: "C'era un periodo in cui tu scambiavi tutti per una persona famosa nel panorama musicale italiano. Chi \'e8?",\
+                options: ["Giuliano dei Negramaro", "Tommaso dei Thegiornalisti", "Fabri Fibra", "Nino d'Angelo"],\
+                correct: 0\
+            \}\
+        ];\
+\
+        let currentPhase = 1;\
+        let activeQuestions = [];\
+        let currentQuestionIndex = 0;\
+        let score = 0;\
+        let answered = false;\
+\
+        function startQuiz(phase) \{\
+            currentPhase = phase;\
+            document.getElementById('start-screen').classList.add('hidden');\
+            document.getElementById('result-screen-1').classList.add('hidden');\
+            document.getElementById('quiz-screen').classList.remove('hidden');\
+            \
+            if(phase === 1) \{\
+                activeQuestions = techQuestions;\
+                document.getElementById('main-card').classList.remove('phase2-active');\
+            \} else \{\
+                activeQuestions = realQuestions;\
+                document.getElementById('main-card').classList.add('phase2-active');\
+            \}\
+\
+            currentQuestionIndex = 0;\
+            score = 0;\
+            showQuestion();\
+        \}\
+\
+        function showQuestion() \{\
+            answered = false;\
+            document.getElementById('next-btn').classList.add('hidden');\
+            \
+            const currentQuestion = activeQuestions[currentQuestionIndex];\
+            \
+            document.getElementById('question-counter').innerText = `Domanda $\{currentQuestionIndex + 1\} di $\{activeQuestions.length\}`;\
+            const progressPercent = (currentQuestionIndex / activeQuestions.length) * 100;\
+            document.getElementById('progress-fill').style.width = `$\{progressPercent\}%`;\
+            \
+            document.getElementById('question-text').innerText = currentQuestion.question;\
+            \
+            const optionsContainer = document.getElementById('options-container');\
+            optionsContainer.innerHTML = '';\
+            \
+            currentQuestion.options.forEach((option, index) => \{\
+                const button = document.createElement('button');\
+                button.innerText = option;\
+                button.classList.add('option-btn');\
+                button.onclick = () => selectOption(index, button);\
+                optionsContainer.appendChild(button);\
+            \});\
+        \}\
+\
+        function selectOption(selectedIndex, selectedButton) \{\
+            if (answered) return;\
+            answered = true;\
+            \
+            const currentQuestion = activeQuestions[currentQuestionIndex];\
+            const allButtons = document.querySelectorAll('#secret-quiz-zone-wrapper .option-btn');\
+            \
+            allButtons.forEach(btn => btn.disabled = true);\
+            \
+            if (selectedIndex === currentQuestion.correct) \{\
+                selectedButton.classList.add('correct');\
+                score++;\
+            \} else \{\
+                selectedButton.classList.add('wrong');\
+                allButtons[currentQuestion.correct].classList.add('correct');\
+            \}\
+            \
+            document.getElementById('next-btn').classList.remove('hidden');\
+        \}\
+\
+        function nextQuestion() \{\
+            currentQuestionIndex++;\
+            if (currentQuestionIndex < activeQuestions.length) \{\
+                showQuestion();\
+            \} else \{\
+                showResults();\
+            \}\
+        \}\
+\
+        function showResults() \{\
+            document.getElementById('quiz-screen').classList.add('hidden');\
+            \
+            if (currentPhase === 1) \{\
+                document.getElementById('result-screen-1').classList.remove('hidden');\
+                document.getElementById('score-display-1').innerText = score;\
+                \
+                let evalText = "";\
+                if (score <= 4) \{\
+                    evalText = "Diagnosi: Errore critico di sistema (Stack Overflow). Andrea, forse \'e8 il caso di ridare la triennale. C'\'e8 un memory leak evidente nelle tue nozioni!";\
+                \} else if (score <= 8) \{\
+                    evalText = "Diagnosi: Codice compilato con qualche Warning. Ottima preparazione, sei ufficialmente pronto a ignorare i bug in produzione come un vero professionista!";\
+                \} else \{\
+                    evalText = "Diagnosi: Compilazione perfetta (0 Errori, 0 Warning). Livello: Divinit\'e0 del Codice. Il titolo di Dottore Magistrale ti sta persino stretto!";\
+                \}\
+                document.getElementById('evaluation-text-1').innerText = evalText;\
+            \} else \{\
+                document.getElementById('result-screen-2').classList.remove('hidden');\
+                document.getElementById('score-display-2').innerText = score;\
+            \}\
+        \}\
+\
+        function restartEverything() \{\
+            document.getElementById('result-screen-2').classList.add('hidden');\
+            document.getElementById('start-screen').classList.remove('hidden');\
+            document.getElementById('main-card').classList.remove('phase2-active');\
+        \}\
+    </script>\
+\
+</body>\
+</html>}
